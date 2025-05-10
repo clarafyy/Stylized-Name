@@ -1,0 +1,40 @@
+.fascinate-inline-regular {
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body { font-family: "Fascinate Inline";
+    font-size: 40px;
+    text-align: center;
+}
+
+
+@keyframes name {
+  from {color: #77b5d1;}
+  to {color: #336e8a;}
+}
+
+.name {
+    background: radial-gradient(circle, #336e8a, #a7cf5d);
+    background-clip: text;
+    color: transparent;
+    animation: name 5s linear infinite;
+    background-size: 200% 200%;
+}
+
+
+@keyframes name {
+  0%   {background-position: 0% 0%;}
+  50%  {background-position: 100% 100%;}
+  100% {background-position: 0% 0%;}
+}
+
+/* The element to apply the animation to */
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
